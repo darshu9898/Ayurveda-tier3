@@ -61,7 +61,7 @@ if (!phoneRegex.test(formData.phone)) {
   
     try {
       const response = await fetch(
-        'https://script.google.com/macros/s/AKfycbzq9oj3p8rs2R0UMjbeLAbClMccb8lnG0OjQ1Pj8zOX6-d8r3li6BbKHF82X6QNEoV7/exec',
+        'https://script.google.com/macros/s/AKfycbxhk8vzuOZQ_y1pnoQ6GgDJzZTMhjXVKJUC-nRJCPRBYBfjOZ5yLKEF9cDaiEIswPLv/exec',
         {
           method: 'POST',
           headers: {
@@ -364,6 +364,17 @@ if (!phoneRegex.test(formData.phone)) {
           </details>
         </div>
       </section>
+
+      <div className={styles.fixedButton}>
+        <button
+          onClick={() => setShowForm(true)}
+          style={{ all: 'unset', color: 'white', padding: '12px 24px', fontSize: '24px', borderRadius: '8px', textAlign: 'center', display: 'inline-block', cursor: 'pointer', border: 'none' }}
+        >
+          अभी खरीदें – BUY NOW
+        </button>
+      </div>
+
+      
 
       {/* Fixed Buy Now Button */}
       <div style={{
