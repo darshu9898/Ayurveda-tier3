@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function ThankYou() {
   return (
@@ -26,10 +28,12 @@ export default function ThankYou() {
           width: '100%',
           boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
         }}>
-          <img
+          <Image
             src="/success-check.png"
             alt="Success"
-            style={{ width: '80px', marginBottom: '20px' }}
+            width={80}
+            height={80}
+            style={{ marginBottom: '20px' }}
           />
           <h1 style={{ fontSize: '24px', marginBottom: '10px', color: '#2c3e50' }}>
             धन्यवाद! 🙏
@@ -41,7 +45,8 @@ export default function ThankYou() {
 
           {/* Optional buttons */}
           <div style={{ marginTop: '25px' }}>
-            <a href="/" style={{
+          <Link href="/" legacyBehavior>
+            <a style={{
               backgroundColor: '#f1c40f',
               color: '#000',
               padding: '10px 20px',
@@ -53,8 +58,9 @@ export default function ThankYou() {
             }}>
               🔙 होम पेज पर लौटें
             </a>
+          </Link>
             <br />
-            <a href="https://wa.me/9821045611" target="_blank" style={{
+            <a href="https://wa.me/9821045611" target="_blank" rel="noopener noreferrer"  style={{
               backgroundColor: '#25D366',
               color: 'white',
               padding: '10px 20px',
