@@ -61,7 +61,7 @@ if (!phoneRegex.test(formData.phone)) {
   
     try {
       const response = await fetch(
-        'https://script.google.com/macros/s/AKfycbxhk8vzuOZQ_y1pnoQ6GgDJzZTMhjXVKJUC-nRJCPRBYBfjOZ5yLKEF9cDaiEIswPLv/exec',
+        'https://script.google.com/macros/s/AKfycbxTlfa0M4y9jTUVxA3oKsfknoStOzAOhGkcHA1MDUl723taJqdPNsBWRItxPKLk0DOI/exec',
         {
           method: 'POST',
           headers: {
