@@ -71,9 +71,9 @@ if (!phoneRegex.test(formData.phone)) {
         }
       );
 
-      alert('Form submitted successfully!');
-      setFormData({ name: '', phone: '', address: '' });
-      setShowForm(false);
+      // ✅ Redirect to thank-you page
+    window.location.href = "/thank-you";
+
     } catch (error) {
       console.error(error);
       alert('Error submitting form.');
